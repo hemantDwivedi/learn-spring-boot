@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Fragement Expression</title>
+</head>
+<body>
+<h1>Fragement Expression Demo</h1>
+<div th:replace="~{common/header :: header}"></div> 
+<div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore labore similique ducimus iure iste repellendus alias nostrum eius sed beatae?</p>
+</div>
+<div th:replace="~{common/footer :: footer}"></div> 
+</body>
+</html>

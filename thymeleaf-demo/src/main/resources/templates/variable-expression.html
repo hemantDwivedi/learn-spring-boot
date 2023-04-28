@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en"
+    xmlns:th="http://www.thymeleaf.org"
+>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>thymeleaf</title>
+</head>
+<body>
+    <h2>variable expression demo</h2>
+    <h4>user details</h4>
+    <div>
+        <p>Name</p>
+    </div>
+    <div>
+        <p th:text="${user.name}"></p>
+    </div>
+    <div>
+        <p>email</p>
+    </div>
+    <div>
+        <p th:text="${user.email}"></p>
+    </div>
+    <div>
+        <p>Role</p>
+    </div>
+    <div>
+        <p th:text="${user.role}"></p>
+    </div>
+    <div>
+        <p>Gender</p>
+    </div>
+    <div>
+        <p th:text="${user.gender}"></p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+spring:
+  datasource:
+    username: root
+    password: zero
+    url: jdbc:mysql://localhost:3306/user_management
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+    show-sql: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: "always"
+    shutdown:
+      enabled: true
+  info:
+    env:
+      enabled: true
+
+
+info:
+  app:
+    name: "spring boot restful api"
+    description: "spring boot project and learning mode on"

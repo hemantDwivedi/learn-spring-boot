@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Switch Case</title>
+</head>
+<body>
+    <h1>Switch Case Thymelead Demo</h1>
+    <h3 th:text="${user.name}"></h3>
+    <div th:switch="${user.role}">
+        <p th:case="'ADMIN'">Admin user</p>
+        <p th:case="'USER'">Normal user</p>
+        <p th:case="'*'">default case user</p>
+    </div>
+</body>
+</html>

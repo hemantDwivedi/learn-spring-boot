@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    username: root
+    password: zero
+    url: jdbc:mysql://localhost:3306/user_management
+  jpa:
+    hibernate:
+      ddl-auto: update
+#  security:
+#    user:
+#      name: hemant
+#      password: 12345
+#      roles:
+#        - "ADMIN"
